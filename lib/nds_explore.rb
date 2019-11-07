@@ -11,8 +11,12 @@ def pretty_print_nds(nds)
   nil
 end
 
-def print_first_directors_movie_titles
-directors_movies= directors_database[0][:movies]
+def print_directors_total
+  counter = 0 
+  while counter
+  p directors_database [0][:movies]
+def print_directors_total
+directors_movies = directors_database[0][:movies]
 counter = 0 
 while counter < directors_movies.count do
   puts directors_movies[counter][:title]
